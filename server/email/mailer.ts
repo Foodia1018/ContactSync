@@ -5,11 +5,11 @@ import { generateUserConfirmationEmail, generateAdminNotificationEmail } from '.
 // Configure nodemailer transporter
 const createTransporter = () => {
   // Get SMTP configuration from environment variables with fallbacks
-  const host = process.env.SMTP_HOST || 'smtp.example.com';
+  const host = process.env.SMTP_HOST || 'smtp.gmail.com';
   const port = parseInt(process.env.SMTP_PORT || '587', 10);
   const secure = process.env.SMTP_SECURE === 'true';
-  const user = process.env.SMTP_USER || 'user@example.com';
-  const pass = process.env.SMTP_PASS || 'password';
+  const user = process.env.SMTP_USER || 'denzelbennie9@gmail.com';
+  const pass = process.env.SMTP_PASS || 'dyue ofir mimi nwml';
   
   return nodemailer.createTransport({
     host,
@@ -29,7 +29,7 @@ export const sendConfirmationEmail = async (registration: Registration): Promise
     const { email, firstName, lastName } = registration;
     
     const mailOptions = {
-      from: process.env.EMAIL_FROM || '"Moment Motor Co." <wrapcampaign@momentmotorco.com>',
+      from: process.env.EMAIL_FROM || '"Moment Motor Co." <denzelbennie9@gmail.com>',
       to: email,
       subject: 'Your Moment Motor Co. Auto Wrap Campaign Application',
       html: generateUserConfirmationEmail(registration),
@@ -47,10 +47,10 @@ export const sendConfirmationEmail = async (registration: Registration): Promise
 export const sendAdminNotificationEmail = async (registration: Registration): Promise<void> => {
   try {
     const transporter = createTransporter();
-    const adminEmail = process.env.ADMIN_EMAIL || 'admin@momentmotorco.com';
+    const adminEmail = process.env.ADMIN_EMAIL || 'denzelbennie@outlook.com';
     
     const mailOptions = {
-      from: process.env.EMAIL_FROM || '"Moment Motor Co." <wrapcampaign@momentmotorco.com>',
+      from: process.env.EMAIL_FROM || '"Moment Motor Co." <denzelbennie9@gmail.com>',
       to: adminEmail,
       subject: 'New Auto Wrap Campaign Application',
       html: generateAdminNotificationEmail(registration),
