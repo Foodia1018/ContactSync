@@ -3,27 +3,37 @@ export const carDesigns = [
   {
     image: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
     title: "Sedan Door Panel",
-    description: "Clean, professional door placement for maximum visibility"
+    description: "Clean, professional door placement for maximum visibility",
+    stickerPosition: "bottom-left",
+    stickerType: "sedan"
   },
   {
     image: "https://images.unsplash.com/photo-1493238792000-8113da705763?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
     title: "SUV Fender Design",
-    description: "Bold side panel placement for larger vehicles"
+    description: "Bold side panel placement for larger vehicles",
+    stickerPosition: "center-right",
+    stickerType: "suv"
   },
   {
     image: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
     title: "Sports Car Side Accent",
-    description: "Sleek design that complements aerodynamic vehicles"
+    description: "Sleek design that complements aerodynamic vehicles",
+    stickerPosition: "center-left",
+    stickerType: "sports"
   },
   {
     image: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
     title: "Hatchback Rear Quarter",
-    description: "Perfect visibility on compact vehicles"
+    description: "Perfect visibility on compact vehicles",
+    stickerPosition: "bottom-right",
+    stickerType: "compact"
   },
   {
     image: "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
     title: "Truck Door Design",
-    description: "High impact placement for larger vehicles"
+    description: "High impact placement for larger vehicles",
+    stickerPosition: "center-left",
+    stickerType: "truck"
   }
 ];
 
@@ -33,31 +43,31 @@ export const stickerSamples = [
     id: "sedan",
     name: "Sedan Package",
     description: "Optimized for most 4-door sedans",
-    image: "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80"
+    colors: { bgColor: '#1E3A8A', textColor: '#FFFFFF', borderColor: '#FF4D4D' }
   },
   {
     id: "suv",
     name: "SUV Package",
     description: "Designed for larger sport utility vehicles",
-    image: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80"
+    colors: { bgColor: '#1E3A8A', textColor: '#FFFFFF', borderColor: '#4CAF50' }
   },
   {
     id: "compact",
     name: "Compact Package",
     description: "Scaled for smaller vehicles and hatchbacks",
-    image: "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80"
+    colors: { bgColor: '#1E3A8A', textColor: '#FFFFFF', borderColor: '#FFD700' }
   },
   {
     id: "truck",
     name: "Truck Package",
     description: "Bold designs for pickup trucks",
-    image: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80"
+    colors: { bgColor: '#1E3A8A', textColor: '#FFFFFF', borderColor: '#FF9800' }
   },
   {
-    id: "luxury",
-    name: "Luxury Package",
-    description: "Subtle, elegant designs for luxury vehicles",
-    image: "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80"
+    id: "sports",
+    name: "Sports Car Package",
+    description: "Sleek designs for sports and luxury vehicles",
+    colors: { bgColor: '#1E3A8A', textColor: '#FFFFFF', borderColor: '#E91E63' }
   }
 ];
 
